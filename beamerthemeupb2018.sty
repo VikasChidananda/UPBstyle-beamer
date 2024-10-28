@@ -32,9 +32,13 @@
 % FONT
 % we use Cabin as a modern open source sans serif font. It is similar to the
 % UPB font and is provided by default in LaTeX.
+\RequirePackage{fontspec}
+\setmainfont{Segoe UI Symbol}
+\setsansfont{Segoe UI Symbol}
 
-\RequirePackage[sfdefault,condensed]{cabin}
-\renewcommand{\familydefault}{\sfdefault}
+
+% \RequirePackage[sfdefault,condensed]{cabin}
+% \renewcommand{\familydefault}{\sfdefault}
 
 
 % GEOMETRY
@@ -84,8 +88,59 @@
 \definecolor{upbcassis}{RGB}{169,57,131}
 \definecolor{upblightblue}{RGB}{0,127,185}
 
+% 2024 color definitions
+% COLOR DEFINITION
+% defining the UPB-colors
+\definecolor{upbultrablue}{RGB}{0,37,170} % Primary color
+
+% Secondary colors
+\definecolor{upbhimmelblau}{RGB}{10,117,196}
+\definecolor{upbsaphirblau}{RGB}{24,28,98}
+\definecolor{upbirisviolett}{RGB}{126,63,168}
+\definecolor{upbfuchsiarot}{RGB}{193,56,160}
+\definecolor{upbmeerblau}{RGB}{35,169,201}
+\definecolor{upbarktisblau}{RGB}{80,209,209}
+
+% Tertiary colors
+\definecolor{upblimettengruen}{RGB}{172,234,61}
+\definecolor{upbgranatpink}{RGB}{239,58,132}
+
+% Shades of Secondary colors
+\definecolor{upbhimmelblau-80}{RGB}{59,145,208}
+\definecolor{upbhimmelblau-60}{RGB}{108,172,220}
+\definecolor{upbhimmelblau-40}{RGB}{157,200,231}
+\definecolor{upbhimmelblau-20}{RGB}{206,227,243}
+
+\definecolor{upbsaphirblau-80}{RGB}{70,73,129}
+\definecolor{upbsaphirblau-60}{RGB}{116,119,161}
+\definecolor{upbsaphirblau-40}{RGB}{163,164,192}
+\definecolor{upbsaphirblau-20}{RGB}{209,210,224}
+
+\definecolor{upbirisviolett-80}{RGB}{152,101,185}
+\definecolor{upbirisviolett-60}{RGB}{177,140,203}
+\definecolor{upbirisviolett-40}{RGB}{203,178,220}
+\definecolor{upbirisviolett-20}{RGB}{229,216,238}
+
+\definecolor{upbfuchsiarot-80}{RGB}{205,96,179}
+\definecolor{upbfuchsiarot-60}{RGB}{218,136,198}
+\definecolor{upbfuchsiarot-40}{RGB}{230,175,217}
+\definecolor{upbfuchsiarot-20}{RGB}{243,215,236}
+
+\definecolor{upbmeerblau-80}{RGB}{79,186,212}
+\definecolor{upbmeerblau-60}{RGB}{123,203,223}
+\definecolor{upbmeerblau-40}{RGB}{167,220,233}
+\definecolor{upbmeerblau-20}{RGB}{211,238,244}
+
+\definecolor{upbarktisblau-80}{RGB}{115,218,218}
+\definecolor{upbarktisblau-60}{RGB}{150,227,227}
+\definecolor{upbarktisblau-40}{RGB}{185,237,237}
+\definecolor{upbarktisblau-20}{RGB}{220,246,246}
+
 
 % We declare beamer options for using the color theme of the presentation.
+% create a function to include the 2024 color theme
+
+
 \newcommand{\titlecolor}{upbcyan}
 \DeclareOptionBeamer{cyan}[true]{\renewcommand{\titlecolor}{upbcyan}}
 \DeclareOptionBeamer{orange}[true]{\renewcommand{\titlecolor}{upborange}}
